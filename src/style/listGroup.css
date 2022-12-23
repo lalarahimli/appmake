@@ -1,0 +1,17 @@
+input {
+  display: none;
+}
+
+input:checked + label::after {
+  content: '-';
+  right: 10px;
+  top: 4px;
+}
+
+input + label + .content {
+  display: none;
+}
+
+input:checked + label + .content {
+  display: block;
+}
